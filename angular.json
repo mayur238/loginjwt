@@ -12,9 +12,7 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
-          
           "options": {
-          
             "outputPath": "dist/login",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -60,10 +58,6 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "sslKey": "server-certificate.pem",
-            "sslCert": "server-certificate.pem"
-          },
           "configurations": {
             "production": {
               "browserTarget": "login:build:production"

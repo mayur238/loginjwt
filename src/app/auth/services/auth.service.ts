@@ -8,7 +8,7 @@ import { Login } from '../class/login';
 })
 export class AuthService{
 
-  private readonly AUTH_URL : string = 'https://localhost:8080/auth';
+  private readonly AUTH_URL : string = 'http://localhost:8080/auth';
 
   constructor(
     private http:HttpClient
@@ -39,7 +39,7 @@ export class AuthService{
   }
 
   public getData(authUser:any, keyId:number){
-    return this.http.post<any>(`https://localhost:8080/print?keyid=${keyId}`, authUser);
+    return this.http.post<any>(`http://localhost:8080/print?keyid=${keyId}`, authUser);
   }
   public addInitVector(authKey:AuthKey){
     return this.http.post<any>(`${this.AUTH_URL}/initvector`, authKey);
