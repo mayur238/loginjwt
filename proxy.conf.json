@@ -1,0 +1,10 @@
+{
+    "/api": {
+    "target": "https://localhost:8080",
+    "secure": true,
+    "ssl": {
+      "key": "server-certificate.pem",
+      "cert": "server-certificate.pem"
+    }
+  }
+}

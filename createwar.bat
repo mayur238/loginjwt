@@ -1,0 +1,1 @@
+ng build && npm run war && mvn clean package
